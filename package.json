@@ -1,0 +1,35 @@
+{
+  "name": "email-smtp-validator",
+  "version": "1.0.0",
+  "description": "Validates emails using regex, disposable email blacklists, DNS records, and SMTP server responses.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "start:dev": "ts-node ./index.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "email verifier",
+    "smtp validator",
+    "email smtp validator",
+    "smtp",
+    "mx email validator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/disposable-email-domains": "^1.0.6",
+    "@types/node": "^20.12.7",
+    "disposable-email-domains": "^1.0.62",
+    "tsup": "^8.0.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
