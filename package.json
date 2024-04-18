@@ -27,7 +27,7 @@
     "email-regex"
   ],
   "author": "sourav sharma",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/disposable-email-domains": "^1.0.6",
     "@types/node": "^20.12.7",
