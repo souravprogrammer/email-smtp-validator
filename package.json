@@ -5,10 +5,13 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souravprogrammer/email-smtp-validator.git"
+  },
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
-    "lint": "tsc",
-    "start:dev": "ts-node ./index.ts"
+    "build": "tsup ./src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "files": [
     "dist"
@@ -18,17 +21,20 @@
     "smtp validator",
     "email smtp validator",
     "smtp",
-    "mx email validator"
+    "mx email validator",
+    "mx-records",
+    "disposable-emails",
+    "email-regex"
   ],
-  "author": "",
+  "author": "sourav sharma",
   "license": "ISC",
   "dependencies": {
     "@types/disposable-email-domains": "^1.0.6",
     "@types/node": "^20.12.7",
-    "disposable-email-domains": "^1.0.62",
-    "tsup": "^8.0.2"
+    "disposable-email-domains": "^1.0.62"
   },
   "devDependencies": {
+    "tsup": "^8.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
