@@ -14,7 +14,7 @@ type OutputReselt = {
 
 class SmtpEmailValidator {
     options: Options
-    constructor(options: EmailValidatorOption) {
+    constructor(options: EmailValidatorOption = {}) {
         this.options = GenerateDefaultOptions(options)
     }
     async verify(emailAdderss: string): Promise<OutputReselt> {

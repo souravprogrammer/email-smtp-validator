@@ -11,10 +11,8 @@ export type Options = {
 export type EmailValidatorOption = Partial<Options>;
 
 const emailDefaultOption: EmailValidatorOption = {
-
-    sender: 'no-reply@example.com',
     validateRegex: true,
-    validateDisposable: false,
+    validateDisposable: true,
     validateMx: false,
     validateSMTP: false,
     validateSMTPdeep: false,

@@ -121,7 +121,7 @@ export async function VerifyMailBox(verify: VerifyMailBox) {
 function* GenratemailBoxMessages(sender: string, recipient: string, exchange: string) {
     const messages = [
         `HELO ${exchange}`,
-        `MAIL FROM: <${sender}>`,
+        `MAIL FROM: <${sender ?? recipient}>`,
         `RCPT TO: <${recipient}>`
     ];
     for (let msg of messages) {
