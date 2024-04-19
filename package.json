@@ -1,6 +1,6 @@
 {
   "name": "email-smtp-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Validates emails using regex, disposable email blacklists, DNS records, and SMTP server responses.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
