@@ -47,7 +47,7 @@ export async function VerifyMailBox(verify: VerifyMailBox) {
 
     return await new Promise<Result>((resolve) => {
         const commands = GenratemailBoxMessages(verify.sender, verify.recipient, verify.exchange);
-        const socket = net.createConnection(25, verify.exchange);
+        const socket = net.connect(verify.port ?? 25, verify.exchange);
         socket.setTimeout(verify.timeOut);
 
 
